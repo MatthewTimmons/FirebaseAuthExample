@@ -47,6 +47,7 @@ class RegisterActivity: AppCompatActivity() {
                 // TODO Add logic to create a Firebase user
                 // Code goes here
 
+                progressBar.visibility = View.GONE
                 startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
                 finish()
             }

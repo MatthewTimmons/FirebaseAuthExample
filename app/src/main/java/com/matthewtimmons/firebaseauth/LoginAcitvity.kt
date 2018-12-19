@@ -29,15 +29,6 @@ class LoginAcitvity: AppCompatActivity() {
         // Set views
         setViewsById()
 
-        registerBtn.setOnClickListener {
-            startActivity(Intent(this@LoginAcitvity, RegisterActivity::class.java))
-            finish()
-        }
-
-        forgotPasswordBtn.setOnClickListener {
-            startActivity(Intent(this@LoginAcitvity, ForgotPasswordActivity::class.java))
-        }
-
         logInBtn.setOnClickListener {
             val email = emailEt.text.toString()
             val password = passwordEt.text.toString()
@@ -49,9 +40,19 @@ class LoginAcitvity: AppCompatActivity() {
                 // TODO Sign user into Firebase account and start Main Activity
                 // Code goes here
 
+                progressbar.visibility = View.GONE
                 startActivity(Intent(this@LoginAcitvity, MainActivity::class.java))
                 finish()
             }
+        }
+
+        registerBtn.setOnClickListener {
+            startActivity(Intent(this@LoginAcitvity, RegisterActivity::class.java))
+            finish()
+        }
+
+        forgotPasswordBtn.setOnClickListener {
+            startActivity(Intent(this@LoginAcitvity, ForgotPasswordActivity::class.java))
         }
     }
 
