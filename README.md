@@ -3,3 +3,5 @@ This is an application that I made for a presentation on Firebase Authentication
 
 The YouTube tutorial video that accompanies this project can be found below:
 https://youtu.be/ADfI3d08gU0
+
+![](https://github.com/MatthewTimmons/FirebaseAuthExample/blob/Test/FirebaseAuthScreenshots/FirebaseAuth.jpg?raw=true)
